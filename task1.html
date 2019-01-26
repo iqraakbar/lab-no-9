@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide all Six headings</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		span{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+     <h1 id="one">Web Technologies</h1>
+     <h2 id="two">Web Technologies</h2>
+     <h3 id="three">Web Technologies</h3>
+     <h4 id="four">Web Technologies</h4>
+     <h5 id="fifth">Web Technologies</h5>
+     <h6 id="sixth">Web Technologies</h6>
+    
+
+     <p id="para">Web technology refers to the means by which computers communicate with each other using markup languages and multimedia packages. It gives us a way to interact with hosted information, like websites.Web technology involves the use of hypertext markup language (HTML) and cascading style sheets (CSS).Web development comes with a huge set of rules and techniques every website developer should know about. If you want a website to look and function as you wish them to, you need to get familiar with web technologies that will help you achieve your goal.Developing an app or a website typically comes down to knowing 3 main languages: JavaScript, CSS, and HTML. And while it sounds quite complicated, once you know what you are doing, understanding web technology and the way it works becomes significantly easier.</p>
+
+     <p>First Name:<input type="text" id="fname" placeholder="Enter firstname">
+     	<span>fname</span></p><br>
+     <p>Last Name:<input type="text" id="lname" placeholder="Enter Lasttname">
+     	<span>lastname</span></p><br>
+     <p>Middle Name:<input type="text" id="mname" placeholder="Enter Middlename">
+     	<span>middlename</span></p><br>
+
+
+     	<p>Name:<input type="text" id="name" placeholder="Enter name"></p><br>
+        <p>Rollno:<input type="text" id="rollno" placeholder="Enter Rollno"></p>
+
+  <ul>
+  <li>Pizza</li>
+  <li>Burger</li>
+  <li>Ice cream</li>
+  <li>Sweet corn</li>
+  <li>Biryani</li>
+  <li>Cake</li>
+</ul>
+  <button>Display the number of list items</button>
+     
+<script type="text/javascript">
+	$(document).ready(function(){
+  $("#one").click(function(){
+    $("#one").hide();
+  });
+
+  $("#two").click(function(){
+    $("#two").hide();
+  });
+
+  $("#three").click(function(){
+    $("#three").hide();
+  });
+
+  $("#four").click(function(){
+    $("#four").hide();
+  });
+
+
+
+  $("#fifth").click(function(){
+    $("#fifth").hide();
+  });
+
+
+
+  $("#sixth").click(function(){
+    $("#sixth").hide();
+  });
+
+
+	//second task
+	$("#para").click(function(){
+  $("#para").css("color", "red");
+});
+
+	//third task
+	$("p").focusin(function(){
+  $(this).find("span").css("display", "inline").fadeOut(2000);
+});
+  
+  //fourth task
+	$( "#name" ).focusin(function() {
+  $( this ).blur();
+});
+ 
+ //fifth task
+ $("button").click(function(){
+    document.write($("li").length);
+    });
+
+});
+     </script>
+
+     
+</body>
+</html>
